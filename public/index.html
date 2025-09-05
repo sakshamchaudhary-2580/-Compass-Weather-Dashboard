@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Compass + Weather Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="card">
+    <h2>🧭 Compass + 🌦 Weather Dashboard</h2>
+    <p style="text-align:center;">Enter a city/village and get both its <b>direction</b> & <b>current weather</b>.</p>
+
+    <div class="search">
+      <input type="text" id="place" placeholder="Enter City/Village" />
+      <button onclick="handleSearch()">Check</button>
+    </div>
+
+    <div id="compass"><div id="arrow"></div></div>
+    <p id="result">Waiting for input…</p>
+
+    <div id="weatherResult"></div>
+    <div class="logs" id="weatherLogs"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
